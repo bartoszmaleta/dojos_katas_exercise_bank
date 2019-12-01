@@ -37,7 +37,13 @@ def get_odd_elements(x, start):
     >>> get_odd_elements(3, 10)
     [11, 13, 15]
     """
+    list_with_odd_elements = []
+    for number in range(start, 1000, 1):
+        if number % 2 == 1:
+            list_with_odd_elements.append(number)
 
+    list_with_x_odd_elements = list_with_odd_elements[:x]
+    return list_with_x_odd_elements
 
 # ---------------------------------------------------------------
 
