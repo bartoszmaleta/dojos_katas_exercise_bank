@@ -11,7 +11,18 @@ def get_common_elements(first_list, second_list):
     [3, 5, 8]
 
     """
+    list_with_numbers_on_both_list = []
+    for elem in first_list:
+        if elem in second_list:
+            list_with_numbers_on_both_list.append(elem)
+    
+    # print(list_with_numbers_on_both_list)
+    return list_with_numbers_on_both_list
 
+
+# first_list_with_numbers = [3, 5, 8]
+# second_list_with_numbers = [3, 4, 5, 12, 8]
+# get_common_elements(first_list_with_numbers, second_list_with_numbers)
 # ---------------------------------------------------------------
 
 
@@ -25,8 +36,8 @@ def get_odd_elements(x, start):
 
     >>> get_odd_elements(3, 10)
     [11, 13, 15]
-==
     """
+
 
 # ---------------------------------------------------------------
 
