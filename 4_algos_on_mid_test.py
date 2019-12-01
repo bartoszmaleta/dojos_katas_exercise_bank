@@ -53,6 +53,12 @@ def get_sum_of_all_even_elements(my_list):
     8
 
     """
+    sum_of_all_even_elements = 0
+    for elem in my_list:
+        if elem % 2 == 0:
+            sum_of_all_even_elements += elem
+
+    return sum_of_all_even_elements
 
 
 # ---------------------------------------------------------------
