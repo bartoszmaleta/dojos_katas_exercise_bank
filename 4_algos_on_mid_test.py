@@ -83,7 +83,15 @@ def get_letters_statistics(word):
     True
 
     """
+    dict_with_letters_statistic = {}
 
+    for elem in word:
+        if elem in dict_with_letters_statistic:
+            dict_with_letters_statistic[elem] += 1
+        else:
+            dict_with_letters_statistic[elem] = 1
+
+    return dict_with_letters_statistic
 
 # ---------------------------------------------------------------
 
